@@ -1,0 +1,13 @@
+.content-title {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.content-title div {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}

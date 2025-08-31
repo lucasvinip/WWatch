@@ -1,0 +1,14 @@
+img {
+    width: 12vw;
+    height: 25vh;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 450px) {
+    img {
+        width: 26vw;
+        height: 26.5vh;
+    }
+}
