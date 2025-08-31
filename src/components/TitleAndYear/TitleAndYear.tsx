@@ -1,5 +1,4 @@
 import React from "react";
-import "./titleAndYear.css";
 
 interface TitleAndYearProps {
     title: string;
@@ -8,18 +7,16 @@ interface TitleAndYearProps {
 
 const TitleAndYear: React.FC<TitleAndYearProps> = ({ title, year }) => {
     return (
-        <div className="content-title">
-            <div>
-                <span>
-                    {title.toUpperCase()}
-                </span>
-                <span>
-                    -
-                </span>
-                <span>
-                    {year}
-                </span>
-            </div>
+        <div>
+            <span>
+                {title.toUpperCase()}
+            </span>
+            <span>
+                -
+            </span>
+            <span>
+                {year}
+            </span>
         </div>
     );
 };

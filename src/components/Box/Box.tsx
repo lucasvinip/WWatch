@@ -1,6 +1,6 @@
 import React from "react";
 import "./box.css";
-import BoxImg from "../../BoxImg/BoxImg";
+import BoxImg from "../BoxImg/BoxImg";
 
 interface BoxProps {
     year: number;

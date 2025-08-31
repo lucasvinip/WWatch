@@ -1,5 +1,4 @@
 import React from "react";
-import "./pagination.css";
 
 interface Pagination{
     number: number;

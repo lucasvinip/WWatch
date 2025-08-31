@@ -2,8 +2,8 @@ import React from "react";
 import "./css/reset.css";
 import "./css/appDesktop.css";
 import "./css/appMobile.css";
-import Genres from "./components/App/Genres/Genres";
-import Box from "./components/App/Box/Box";
+import Genres from "./components/Genres/Genres";
+import Box from "./components/Box/Box";
 //1920x1080
 
 const App: React.FC = () => {
