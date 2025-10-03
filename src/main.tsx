@@ -11,7 +11,7 @@ const router = createHashRouter([
   {
     path: "/",
     element: <WWatch />,
-    errorElement:<NotFound />
+    errorElement: <NotFound />
   },
   {
     path: "/filme/:id/:title",
@@ -21,7 +21,7 @@ const router = createHashRouter([
     path: "/todos-os-filmes/:year/:genreId",
     element: <AllMovies />
   }
-]);
+], { basename: "/WWatch" });
 
 createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
