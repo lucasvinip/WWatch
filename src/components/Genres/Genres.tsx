@@ -2,24 +2,22 @@ import React from "react";
 
 interface GenresProps {
   genres: string;
+  activeGenre: string | number;
+  setActiveGenre: (genre: string | number) => void;
 }
 
-//AÇÃO
-//AÇÃO
-//DRAMA
-//COMÉDIA
-//ROMANCE
-//AVENTURA
-
-
-const Genres: React.FC<GenresProps> = ({genres}) => {
+const Genres: React.FC<GenresProps> = ({ genres, activeGenre, setActiveGenre }) => {
 
   return (
-    <>
-      <span>
-        {genres}
-      </span>
-    </>
+    <span
+      onClick={() => setActiveGenre(genres)}
+      style={{
+        transform: activeGenre === genres ? "scale(1.05)" : "",
+        color: activeGenre === genres ? "rgba(217, 217, 217, 0.5)" : ""
+      }}
+    >
+      {genres}
+    </span>
   );
 };
 

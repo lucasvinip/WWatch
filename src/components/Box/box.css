@@ -26,14 +26,25 @@
 }
 
 .seeall button {
-    width: 3.9vw;
-    height: 3.9vw;
+    width: 3vw;
+    height: 3vw;
     background-color: rgba(217, 217, 217, 0.5);
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px #161111;
+    transition: background 0.2s, transform 0.2s;
+    cursor: pointer;
+    border: none;
+}
+.seeall button:hover {
+    background: rgba(217, 217, 217, 0.5);
+    transform: scale(1.08);
 }
 
 .seeall span {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
@@ -68,15 +79,16 @@
         justify-content: center;
         align-items: center;
     }
+
     .seeall button {
-        width: 12vw;
-        height: 12vw;
+        width: 10vw;
+        height: 10vw;
         background-color: rgba(217, 217, 217, 0.5);
         border-radius: 50%;
     }
 
     .seeall span {
-        font-size: 0.7rem;
+        font-size: .5rem;
         text-align: center;
         font-family: 'Inter', sans-serif;
         font-weight: 700;

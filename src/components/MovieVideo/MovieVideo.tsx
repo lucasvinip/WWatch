@@ -1,8 +1,19 @@
 import React from "react";
 
-const MovieVideo: React.FC = () => {
+
+
+interface MovieVideoProps {
+    src: string | undefined;
+    style: React.CSSProperties;
+}
+
+const MovieVideo: React.FC<MovieVideoProps> = ({ src, style }) => {
     return (
-        <div className="container-video"></div>
+        <iframe
+            style={style}
+            src={src}
+            allowFullScreen >
+        </iframe >
     );
 };
 

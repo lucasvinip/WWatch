@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
-main {
+.main-allMovies {
     width: 100%;
-    height: 135vh;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.85);
     font-family: 'Inter', sans-serif;
     font-weight: 900;
@@ -32,12 +32,12 @@ main {
 .content-img {
     width: 100%;
     min-height: 95%;
-    padding-top: 4rem;
+    padding-top: 1.2rem;
     display: flex;
     justify-content: center;
 }
 
-.img div {
+.img-allmovies div {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -54,15 +54,16 @@ main {
 }
 
 .pagination {
-    width: 18%;
+    width: 20vw;
     height: 5vh;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .pagination button {
-    width: 3vw;
-    height: 4vh;
+    width: 6vw;
+    height: 4.5vh;
     border-radius: 0.3rem;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -70,10 +71,17 @@ main {
     justify-content: center;
     align-items: center;
     background-color: rgba(217, 217, 217, 0.5);
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+
+.pagination button:hover {
+    transform: scale(1.1);
+    background: rgba(255, 255, 255, .85);
+
 }
 
 .pagination span {
-    color: black;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: normal;
 }

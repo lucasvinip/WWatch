@@ -1,4 +1,9 @@
 @media screen and (max-width: 450px) {
+    .main-allMovies {
+        min-height: 135vh;
+        height: auto;
+    }
+
     .content-title div {
         width: 50%;
     }

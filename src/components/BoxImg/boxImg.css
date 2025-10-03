@@ -3,8 +3,15 @@ img {
     height: 25vh;
     border-radius: 0.3rem;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #161111;
+    transition: background 0.2s, transform 0.2s;
 }
+img:hover {
+    background: rgba(251, 246, 246, 0.5);
+    transform: scale(1.08);
+}
+
 
 @media screen and (max-width: 450px) {
     img {

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
-main {
+.main-movie {
     width: 100%;
-    height: 100vh;
+    height: 103vh;
     background-color: rgba(0, 0, 0, 0.85);
     font-family: 'Inter', sans-serif;
     font-weight: 900;
@@ -11,13 +11,18 @@ main {
 
 .container-video {
     width: 100%;
-    height: 40%;
-    background-color: rgba(217, 217, 217, 0.5);
+    height: 42vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-video-mobile {
+    display: none;
 }
 
 .container-about {
     width: 100%;
-    height: 55%;
 }
 
 .title {
@@ -27,6 +32,7 @@ main {
     justify-content: center;
     align-items: flex-end;
     font-size: 1.4rem;
+    margin-bottom: 1rem;
 }
 
 .container-description {
@@ -36,15 +42,17 @@ main {
     align-items: center;
     justify-content: center;
 }
+
 .container-description div {
     display: flex;
     align-items: center;
     gap: 2rem;
     padding-left: 2rem;
 }
+
 .container-description div p {
-    width: 80%;
-    text-align: justify;
+    width: 75%;
+    text-align: center;
     font-size: 1.2rem;
 }
 
@@ -56,7 +64,8 @@ main {
     align-items: flex-end;
     font-size: 1.4rem;
 }
-.where-to-watch{
+
+.where-to-watch {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,23 +73,25 @@ main {
     width: 15vw;
     gap: 0.5rem;
 }
+
 .where-to-watch div {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
 }
-.where-to-watch span{
+
+.where-to-watch span {
     width: 15vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.description{
+.description {
     display: none;
 }
 
-.film-cover-where-to-watch{
+.film-cover-where-to-watch {
     display: none;
 }

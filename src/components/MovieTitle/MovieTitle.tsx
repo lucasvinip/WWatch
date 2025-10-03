@@ -1,9 +1,13 @@
 import React from "react";
 
-const MovieTitle: React.FC = () => {
+interface MovieTitleProps {
+    title: string | undefined;
+}
+
+const MovieTitle: React.FC<MovieTitleProps> = ({title}) => {
     return (
         <span>
-            Os Seus, os Meus e os Nossos
+            {title}
         </span>
     );
 };
