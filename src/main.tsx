@@ -1,17 +1,17 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import WWatch from "./pages/WWatch";
 import Movie from "./pages/Movie";
 import AllMovies from "./pages/AllMovies";
 import NotFound from "./pages/NotFound";
 
-const router = createHashRouter([
+const router = createBrowserRouter([
   {
     path: "/",
     element: <WWatch />,
-    errorElement: <NotFound />
+    errorElement:<NotFound />
   },
   {
     path: "/filme/:id/:title",
@@ -21,7 +21,7 @@ const router = createHashRouter([
     path: "/todos-os-filmes/:year/:genreId",
     element: <AllMovies />
   }
-], { basename: "/WWatch" });
+]);
 
 createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
